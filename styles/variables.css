@@ -1,4 +1,15 @@
 /*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
+  Переменные и их переопределение под различные устройства
 */
+:root {
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --primary-color: #f1b2ce;
+  --secondary-color: #000028;
+  --title-font-weight: 700;
+  --subtitle-font-weight: 400;
+  --title-font-size: 116px;
+  --general-font-size: 18px;
+  --title-line-height: 96px;
+  --general-line-height: 23px;
+}
