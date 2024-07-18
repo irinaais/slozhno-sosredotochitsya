@@ -1,0 +1,24 @@
+{
+  "name": "sloghno-sosredotochitsya",
+  "version": "1.0.0",
+  "description": "Адаптивный статичный сайт с тёмной и светлой темами",
+  "main": "scripts/script.js",
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "author": "Ирина Шорохова",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "stylelint": "^16.7.0",
+    "autoprefixer": "^10.4.18",
+    "style-loader": "^3.3.4",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4"
+  }
+}
