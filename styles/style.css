@@ -1,14 +1,16 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-@import "variables.css";
+
+@import 'variables.css';
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  background: url("../images/cover-image.png") no-repeat center / cover fixed;
-  font-weight: var(--fw-bold);
-  color: var(--primary-color);
-  line-height: var(--general-line-height);
-  font-size: var(--general-font-size);
   padding: 10px;
+  color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  font-size: var(--general-font-size);
+  line-height: var(--general-line-height);
+
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: url('../images/cover-image.png') no-repeat center / cover fixed;
 }
 
 .title-decor {
@@ -21,57 +23,57 @@
 }
 
 .rec-decor {
-  color: var(--accent-color);
-  line-height: 25px;
-  margin-block-end: 32px;
   position: absolute;
   top: 0;
   right: 0;
+  margin-block-end: 32px;
+  color: var(--accent-color);
+  line-height: 25px;
 }
 
 .rec-decor::after {
-  content: '';
   display: inline-block;
-  margin-inline: 10px;
-  margin-block-end: 1px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 3px 2px var(--accent-color);
-  background-color: var(--accent-color);
   inline-size: 9px;
   block-size: 9px;
+  margin-block-end: 1px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 2px var(--accent-color);
+  content: '';
+  margin-inline: 10px;
 }
 
 .decorated-zone::before {
-  content: '';
   display: block;
+  justify-self: end;
   inline-size: var(--decor-size);
   block-size: var(--decor-size);
-  justify-self: end;
-  border-inline-end: 1px solid var(--accent-color);
   border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+  content: '';
 }
 
 .decorated-zone::after {
-  content: '';
   display: block;
+  align-self: end;
   inline-size: var(--decor-size);
   block-size: var(--decor-size);
-  align-self: end;
-  border-inline-start: 1px solid var(--accent-color);
   border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+  content: '';
 }
 
 .header {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: repeat(3, min-content);
+  grid-template-columns: 1fr;
 }
 
 .header__theme-menu {
-  color: var(--accent-color);
   justify-self: end;
   margin-block-start: 52px;
+  color: var(--accent-color);
 }
 
 .header__theme-menu-list {
@@ -80,12 +82,13 @@
 }
 
 .header__theme-menu-button {
-  border: 1px solid transparent;
-  background-color: transparent;
-  text-transform: lowercase;
-  text-align: center;
-  cursor: pointer;
   padding: 0 10px 3px;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  line-height: 18px;
 }
 
 .header__theme-menu-button:focus {
@@ -106,22 +109,18 @@
   pointer-events: none;
 }
 
-
-.header__title, .footer__title {
+.header__title,
+.footer__title {
+  justify-self: start;
   color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: var(--title-line-height);
-  justify-self: start;
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header__description {
   justify-self: start;
   margin-block: 52px;
-}
-
-.header__theme-menu-button {
-  line-height: 18px;
 }
 
 .section {
@@ -139,8 +138,8 @@
 .footer {
   display: grid;
   align-content: space-between;
-  padding: 300px 0;
   margin-inline-start: 4px;
+  padding: 300px 0;
 }
 
 .footer__title {
