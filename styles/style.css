@@ -83,12 +83,12 @@
 
 .header__theme-menu-button {
   padding: 0 10px 3px;
+  line-height: 18px;
   text-align: center;
   text-transform: lowercase;
   background-color: transparent;
   border: 1px solid transparent;
   cursor: pointer;
-  line-height: 18px;
 }
 
 .header__theme-menu-button:focus {
@@ -128,10 +128,21 @@
 }
 
 .section__title {
+  margin-block-end: 25px;
   color: var(--accent-color);
 }
 
-.section__text {
+.section__list {
+  display: grid;
+  gap: 25px;
+  list-style: none;
+}
+
+.section__list-item-title {
+  margin-block-end: 15px;
+}
+
+.section__list-item-text {
   font-weight: var(--fw-normal);
 }
 
