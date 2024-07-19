@@ -1,6 +1,48 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@import "variables.css";
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background: url("../images/cover-image.png") no-repeat center / cover fixed;
+  font-weight: var(--fw-bold);
+  color: var(--primary-color);
+  line-height: var(--general-line-height);
+  font-size: var(--general-font-size);
+}
+
+.title-decor {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+
+.fw-normal {
+  font-weight: var(--fw-normal);
+}
+
+.rec-decor {
+  color: var(--accent-color);
+  line-height: 25px;
+}
+
+.header__theme-menu {
+  color: var(--accent-color);
+}
+
+.header__title {
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: var(--general-line-height);
+}
+
+.header__theme-menu-button {
+  line-height: 18px;
+}
+
+.section__title {
+  color: var(--accent-color);
+}
+
+.section__text {
+  font-weight: var(--fw-normal);
 }

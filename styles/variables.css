@@ -6,9 +6,8 @@
   --accent-color: #ff0070;
   --primary-color: #f1b2ce;
   --secondary-color: #000028;
-  --title-font-weight: 700;
-  --subtitle-font-weight: 400;
-  --title-font-size: 116px;
+  --fw-bold: 700;
+  --fw-normal: 400;
   --general-font-size: 18px;
   --title-line-height: 96px;
   --general-line-height: 23px;
